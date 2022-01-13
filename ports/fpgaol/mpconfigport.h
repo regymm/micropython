@@ -26,8 +26,8 @@ typedef long mp_off_t;
 #include <alloca.h>
 
 // Define the port's name and hardware.
-#define MICROPY_HW_BOARD_NAME "squeakyboard"
-#define MICROPY_HW_MCU_NAME   "pcomputer"
+#define MICROPY_HW_BOARD_NAME "fpgaol"
+#define MICROPY_HW_MCU_NAME   "quasisoc"
 
 #define MP_STATE_PORT MP_STATE_VM
 
