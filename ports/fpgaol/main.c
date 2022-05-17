@@ -10,13 +10,9 @@ static char heap[4096];
 
 extern volatile int* video_base;
 extern volatile int* uart_rx_reset;
-extern int uart_list_i;
-extern int uart_list_cnt;
 
 int micropython_main(int argc, char **argv) {
 	*uart_rx_reset = 1;
-	uart_list_i = 0;
-	uart_list_cnt = 0;
 
     // Initialise the MicroPython runtime.
     mp_stack_ctrl_init();
